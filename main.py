@@ -1,7 +1,7 @@
 from fastapi import FastAPI, File, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from tensorflow.keras.models import load_model
+import tensorflow as tf
 from tensorflow.keras.applications.efficientnet import preprocess_input
 from tensorflow.keras.preprocessing import image
 from PIL import Image
